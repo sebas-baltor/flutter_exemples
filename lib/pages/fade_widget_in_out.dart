@@ -9,6 +9,7 @@ class FadeWidgetInOut extends StatefulWidget {
 }
 
 class _FadeWidgetInOutState extends State<FadeWidgetInOut> {
+  // state that will be animated
   bool _visible = true;
 
   @override
@@ -18,6 +19,7 @@ class _FadeWidgetInOutState extends State<FadeWidgetInOut> {
         title: Text(widget.title),
       ),
       body: Center(
+          // child to animate the opacity is the green rectangle
           child: AnimatedOpacity(
         opacity: _visible ? 1.0 : 0.0,
         duration: const Duration(milliseconds: 500),
@@ -30,6 +32,7 @@ class _FadeWidgetInOutState extends State<FadeWidgetInOut> {
       )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+          // set state in other words, re-rendering every click
           setState(() {
             _visible = !_visible;
           });

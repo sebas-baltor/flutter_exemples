@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// this class contain every single route to see the differents pages
 class LinksList extends StatelessWidget {
   const LinksList({super.key});
 
@@ -38,6 +39,7 @@ class LinksList extends StatelessWidget {
               child: ElevatedButton(
                 child: const Text("fade in out go"),
                 onPressed: () {
+                  // push a layer (page) on the top and you go there
                   Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -51,6 +53,7 @@ class LinksList extends StatelessWidget {
               child: ElevatedButton(
                 child: const Text("random square animation"),
                 onPressed: () {
+                  // push a layer (page) on the top and you go there
                   Navigator.push(
                       context,
                       MaterialPageRoute(
