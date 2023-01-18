@@ -1,5 +1,6 @@
 import 'package:examples_test/pages/fade_widget_in_out.dart';
 import 'package:examples_test/pages/random_square_animation.dart';
+import "package:examples_test/pages/animate_page_transition.dart";
 import 'package:flutter/material.dart';
 
 void main() {
@@ -63,6 +64,16 @@ class LinksList extends StatelessWidget {
                 },
               ),
             ),
+            Center(
+              child: ElevatedButton(
+                child: const Text("animate page route transition"),
+                onPressed: (){
+                  Navigator.push(context,
+                  MaterialPageRoute(builder: (context)=> const AnimatePageTransition(title:"animate page route transition"))
+                  );
+                },
+              ),
+            )
           ],
         ));
   }
