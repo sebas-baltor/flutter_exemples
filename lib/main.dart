@@ -1,6 +1,6 @@
-import 'package:examples_test/pages/fade_widget_in_out.dart';
-import 'package:examples_test/pages/random_square_animation.dart';
-import "package:examples_test/pages/animate_page_transition.dart";
+import 'package:examples_test/pages/animation/fade_widget_in_out.dart';
+import 'package:examples_test/pages/animation/random_square_animation.dart';
+import 'package:examples_test/pages/animation/animate_page_transition.dart';
 import 'package:flutter/material.dart';
 
 void main() {
