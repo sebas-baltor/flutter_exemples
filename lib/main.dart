@@ -1,6 +1,10 @@
 import 'package:examples_test/pages/animation/fade_widget_in_out.dart';
 import 'package:examples_test/pages/animation/random_square_animation.dart';
 import 'package:examples_test/pages/animation/animate_page_transition.dart';
+
+import 'package:examples_test/pages/design/drawer_menu.dart';
+import 'package:examples_test/pages/design/ui_based_orientation.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -73,6 +77,29 @@ class LinksList extends StatelessWidget {
                   );
                 },
               ),
+            ),
+            Center(
+              child: ElevatedButton(
+                child: const Text("Drawer menu") ,
+                onPressed: (){
+                  Navigator.push(context,
+                    MaterialPageRoute(builder: 
+                    (context) => const DrawerMenu(title: "drawer demo"))
+                  );
+                },
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                child: const Text("Ui based on orientation"),
+                onPressed: (){
+                  Navigator.push(context,
+                    MaterialPageRoute(builder: 
+                    (context)=> const UiBasesOrientation(title: "ui based on orientation")
+                    )
+                  );
+                },
+                ),
             )
           ],
         ));
