@@ -20,6 +20,7 @@ class _RandomSquareAnimationState extends State<RandomSquareAnimation> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text(widget.title),
       ),
       body: Center(

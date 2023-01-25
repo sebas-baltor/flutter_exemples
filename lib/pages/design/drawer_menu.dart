@@ -6,6 +6,7 @@ class DrawerMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        
         title: Text(title),
       ),
       drawer: Drawer(
